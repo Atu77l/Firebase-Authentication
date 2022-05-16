@@ -1,0 +1,12 @@
+footer{
+    width:100%;
+    height:150px;
+    background-color:black;
+    align-content: center;
+    justify-content: center;
+    padding-left: 550px;
+    word-spacing: 20px;
+}
+link{
+    margin: 20px;
+}

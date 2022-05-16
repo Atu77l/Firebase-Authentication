@@ -5,6 +5,9 @@ import "./Dashboard.css";
 import { auth, db, logout } from "./firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
 import Game from './Game/Game/Game';
+import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
+
 function Dashboard() {
   const [user, loading, error] = useAuthState(auth);
   const [name, setName] = useState("");
@@ -26,6 +29,9 @@ function Dashboard() {
     fetchUserName();
   }, [user, loading]);
   return (
+    <>
+    <div className="complete">
+     <Navbar/>
     <div className="dashboard">
        <div className="dashboard__container">
         Logged in as
@@ -34,9 +40,12 @@ function Dashboard() {
          <button className="dashboard__btn" onClick={logout}>
           Logout
          </button>
-         <Game/>
        </div>
+       <Game/>
      </div>
+     <Footer/>
+     </div>
+    </>
   );
 }
 export default Dashboard
