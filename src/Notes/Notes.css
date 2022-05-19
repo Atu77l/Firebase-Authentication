@@ -108,3 +108,6 @@ textarea:focus {
 .search input:focus {
 	outline: none;
 }
+h1{
+	padding-top: 80px;
+}

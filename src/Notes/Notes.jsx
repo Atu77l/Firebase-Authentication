@@ -3,6 +3,8 @@ import { nanoid } from 'nanoid';
 import NotesList from './NotesList';
 import Search from './Search';
 import './Notes.css';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const Notes = () => {
 	const [notes, setNotes] = useState([
@@ -30,7 +32,6 @@ const Notes = () => {
 
 	const [searchText, setSearchText] = useState('');
 
-	const [darkMode, setDarkMode] = useState(false);
 
 	useEffect(() => {
 		const savedNotes = JSON.parse(
@@ -67,8 +68,10 @@ const Notes = () => {
 
 	return (
 		<>
+		<Navbar/>
 		<h1 align="center">Make Note's</h1>
 			<div className='container'>
+			
 				<Search handleSearchNote={setSearchText} />
 				<NotesList
 					notes={notes.filter((note) =>
@@ -77,7 +80,9 @@ const Notes = () => {
 					handleAddNote={addNote}
 					handleDeleteNote={deleteNote}
 				/>
+		
 			</div>
+			<Footer/>
 	  </>
 	);
 };

@@ -3,8 +3,10 @@
   color: #fff;
   font-size: 26px;
   justify-content: space-between;
-  margin-top: 26px;
   font-weight: 100;
+  background-color: blue;
+  border-radius: 5%;
+  flex-direction: column;
 }
 .scores div {
   width: 150px;

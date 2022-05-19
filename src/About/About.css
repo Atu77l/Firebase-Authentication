@@ -1,0 +1,29 @@
+.about{
+  display: flex;
+  flex-direction: row;
+  min-height: auto;
+  padding:20px;
+  background-color: aliceblue;
+}
+.component{
+  border-radius: 10px 100px / 120px;
+  background-color:deepskyblue;
+   width:100%;
+   margin-right:100px;
+}
+.group{
+  border-radius: 50%;
+
+}
+.head1{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+.hel{
+  color: aliceblue;
+  font-size: larger;
+  font-family:'Times New Roman', Times, serif;
+}

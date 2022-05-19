@@ -31,9 +31,12 @@ const Footer = () => {
       <a id="link" className="btn btn-outline-light btn-floating m-2" href="https://github.com/Atu77l" role="button"
       ><FaGithubSquare/></a>
       </div>
-    <h1>
-        <span className="vivek">Atul Kesharwani</span>
-    </h1>
+      <div className="address">
+        <h3>House No-239/A ,Near State Bank Of India,MMMUT Gorakhpur  Pincode:273010</h3>
+        <h4>Contact No: 9636605371 ,9696252709</h4>
+        <h5>Email id: kesharwaniatul9935@gmail.com</h5>
+      </div>
+   
 </footer>
 </>
     )

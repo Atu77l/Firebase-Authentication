@@ -1,9 +1,25 @@
+
 .navbar{
-    background-color: blue;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     color:white;
     align-content: center;
+    position: fixed;
+    font-size: larger;   
+    background-color:rgb(135, 200, 222);
+    width: 100%;
+}
+.nav-item{
+    color:white;
+    font-weight: 500;
+}
+.nav-link{
+    color: beige;
+
+}
+.navbar-nav{
+    float: inline-end;
+    color: beige;
 }

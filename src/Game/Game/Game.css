@@ -1,5 +1,17 @@
 .Game{
-    margin: 40px;
-    background-color:pink;
-    border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   margin: 40px;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   border-radius: 5px;
+   align-items: center;
+   text-align: center;
+   margin-left: 300px;
+   padding-top: 100px;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
 }

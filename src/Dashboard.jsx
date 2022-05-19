@@ -4,9 +4,8 @@ import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import { auth, db, logout } from "./firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
-import Game from './Game/Game/Game';
 import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer/Footer";
+import Home from "./Home";
 
 function Dashboard() {
   const [user, loading, error] = useAuthState(auth);
@@ -30,21 +29,17 @@ function Dashboard() {
   }, [user, loading]);
   return (
     <>
+    
     <div className="complete">
-     <Navbar/>
-    <div className="dashboard">
+    <Navbar/>
        <div className="dashboard__container">
-        Logged in as
-         <div>{name}</div>
-         <div>{user?.email}</div>
+         <div className="div1">{name}</div>
          <button className="dashboard__btn" onClick={logout}>
           Logout
          </button>
        </div>
-       <Game/>
      </div>
-     <Footer/>
-     </div>
+     <Home/>
     </>
   );
 }

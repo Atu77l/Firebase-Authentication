@@ -2,6 +2,8 @@ import "./Game.css";
 import { useState } from "react";
 import Board from "../Board/Board";
 import Scores from "../Scores/Scores";
+import Navbar from  "../../Navbar/Navbar";
+import Footer from "../../Footer/Footer";
 
 function Game() {
   
@@ -12,10 +14,17 @@ function Game() {
   });
 
   return (
+    <>
+    <div className="main">
+    <Navbar/>
+    </div>
     <div className="Game">
       <Board setScores={setScores}/>
       <Scores scores={scores}/>
     </div>
+    
+    <Footer/>
+    </>
   );
 }
 

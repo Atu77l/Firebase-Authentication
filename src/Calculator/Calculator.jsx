@@ -1,5 +1,7 @@
 import React ,{useState} from 'react';
 import './Calculator.css';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 
 const Calculator = () => {
@@ -23,6 +25,10 @@ const Calculator = () => {
    }
     return (
         <>
+        <div className="main11">
+        <div className="head">
+        <Navbar/>
+        </div>
         <div className="calculator">
             <h2 className='header'>Calculator</h2>
             <input type="text" value={result} className="calculator_result" />
@@ -52,6 +58,8 @@ const Calculator = () => {
             </div></div>
             <div className="enter" onClick={enter}>Enter</div>
             </div>
+            </div>
+            <Footer/>
             </>
         
     )
