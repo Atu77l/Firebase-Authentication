@@ -22,7 +22,7 @@ function Home() {
         {/* ................................ */}
         <h1>Some Example Of Project</h1>
         <div className="father-box">
-        <Link class="nav-link" to='/games'>
+        <Link class="nav-link" to='/game'>
         <div className="box">
            <h2>Games</h2>
            <h4>Here,You can Play Tic Toe Game.Here your competitor is computer.You will also get score of game with number of game tie and computer score and player score.</h4>
